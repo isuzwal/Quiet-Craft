@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import BentoCard from "@/components/ui/bento-card";
-import Button from "@/components/ui/button";
-import NavBara from "@/components/ui/navbara.view";
+import BentoCard from '@/components/ui/bento-card';
+import Button from '@/components/ui/button';
+import NavBara from '@/components/ui/navbara.view';
 
-import { Screen } from "@/container/section-view";
+import { Screen } from '@/container/section-view';
 
 export default function Home() {
   return (
     <Screen>
-      <div className=" p-2">
+      <div>
         <NavBara />
       </div>
       {/* <BentoCard /> */}

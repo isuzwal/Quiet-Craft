@@ -6,7 +6,11 @@ export default {
     "./container/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+        fontFamily: {
+          inter: ['var(--font-inter)', 'Inter', 'sans-serif'],
+        },
+    },
   },
   plugins: [],
 };
