@@ -65,7 +65,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={InterFont.variable}>
-      <body className="font-inter antialiased dark:bg-black bg-white">
+      <body className="font-inter antialiased dark:bg-black bg-white/80 transition-colors duration-300 ease-in-out">
         <ThemeProvider defaultTheme="system" enableSystem attribute="class">
           {children}
         </ThemeProvider>

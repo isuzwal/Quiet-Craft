@@ -9,27 +9,27 @@ function NavBara() {
     setTheme(theme === 'dark' ? 'light' : 'dark');
   };
   return (
-    <nav className=" sticky top-0 w-full boder z-50 backdrop-blur-2xl   flex justify-between px-2 py-1.5 mt-1">
-      <div className="flex  items-center gap-2  justify-between   max-w-[20rem] w-full">
+    <nav className=" sticky top-0 w-full boder z-50 backdrop-blur-2xl   flex justify-between px-2 py-2 mt-2">
+      <div className="flex  items-center gap-6  justify-between   max-w-[22rem]  w-full">
         <Link
           href={'/'}
-          className=" text-lg md:text-xl  font-sans font-semibold font-inter tracking-tight text-neutral-800 dark:text-neutral-200 cursor-pointer"
+          className=" text-xl   font-sans font-semibold font-inter tracking-tight text-neutral-800 dark:text-neutral-200 cursor-pointer"
         >
           Quiet Craft
         </Link>
-        <div className="flex gap-4 items-center">
+        <div className=" hidden sm:flex gap-2 items-center">
           <Link
             href={'/showcase'}
-            className="text-[14px] font-medium font-inter font-sans  hover:bg-neutral-200/80 hover:border-neutral-200 hover:text-neutral-600
-             dark:text-neutral-300 dark:hover:text-neutral-200 text-neutral-700 dark:hover:border-neutral-900 dark:hover:bg-neutral-900 cursor-pointer duration-300 transition-all ease-in-out px-2 py-0.5 justify-center flex items-center rounded-md"
+            className="text-sm   inline-flex whitespace-nowrap font-medium font-inter font-sans  hover:bg-neutral-200/80 hover:border-neutral-200 hover:text-neutral-600
+             dark:text-neutral-300 dark:hover:text-neutral-200 text-neutral-700 dark:hover:border-neutral-900 dark:hover:bg-neutral-900 cursor-pointer duration-300 transition-all ease-in-out px-4 py-1 justify-center  items-center rounded-lg"
           >
             Showcase
           </Link>
           <Link
             href={'/collections'}
-            className="text-[14px] font-semibold font-sans font-inter dark:text-neutral-300 dark:hover:text-neutral-200 text-neutral-700 dark:hover:border-neutral-900 dark:hover:bg-neutral-900
+            className="text-sm inline-flex font-semibold whitespace-nowrap font-sans font-inter dark:text-neutral-300 dark:hover:text-neutral-200 text-neutral-700 dark:hover:border-neutral-900 dark:hover:bg-neutral-900
              hover:bg-neutral-200/80 hover:border-neutral-200 hover:text-neutral-600
-            cursor-pointer duration-300 transition-all ease-in-out px-2 py-0.5 justify-center flex items-center rounded-md"
+            cursor-pointer duration-300 transition-all ease-in-out px-4 py-1 justify-center  items-center rounded-lg"
           >
             Collections
           </Link>
