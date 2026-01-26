@@ -1,5 +1,5 @@
-import BentoCard from '@/components/ui/bento-card';
-import Button from '@/components/ui/button';
+// import BentoCard from '@/components/ui/bento-card';
+// import Button from '@/components/ui/button';
 import { HeroSection } from '@/components/ui/hero-section';
 import NavBara from '@/components/ui/navbara.view';
 
