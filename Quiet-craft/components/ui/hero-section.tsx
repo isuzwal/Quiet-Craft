@@ -16,7 +16,7 @@ export const HeroSection = () => {
           <span className="text-sm z-10">🎉</span>
           <span className="text-foreground/70 text-sm z-10">{' | '}</span>
           <p className="text-sm font-medium z-10 flex gap-1 items-end">
-            Explore a Craft
+            Introducing Quiet craft
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
