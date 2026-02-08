@@ -36,37 +36,23 @@ function NavBara() {
 
   return (
     <nav
-      className={` px-1 sm:px-6 sm:py-4 py-1.5  sticky top-0 w-full boder z-50  backdrop-blur-2xl  ${scrolled ? 'shadow-xs   ' : null}   flex justify-between `}
+      className={` px-1 sm:px-6 sm:py-4 py-1.5  sticky top-0 w-full boder z-50  backdrop-blur-2xl  ${scrolled ? '   ' : null}   flex justify-between `}
     >
-      <div className="flex  items-center gap-6  justify-between   max-w-[28rem]  w-full">
+      <div className="flex  items-center gap-6   justify-between  max-w-[16rem]  w-full">
         <Link
           href={'/'}
           className=" text-xl   font-sans font-semibold tracking-tighter font-inter  text-neutral-800 dark:text-neutral-200 cursor-pointer"
         >
           Quiet Craft
         </Link>
-        <div className=" hidden lg:flex gap-2 items-center">
+        <div className=" hidden   lg:flex gap-2 items-center">
           <Link
-            href={'/docs'}
-            className="text-sm   inline-flex whitespace-nowrap font-semibold font-sans hover:bg-neutral-200/80 hover:border-neutral-200 hover:text-neutral-600
-             dark:text-neutral-300 dark:hover:text-neutral-200 text-neutral-700 dark:hover:border-neutral-900 dark:hover:bg-neutral-900 cursor-pointer duration-300 transition-all ease-in-out px-4 py-1 justify-center  items-center rounded-lg"
-          >
-            Docs
-          </Link>
-          <Link
-            href={'/showcase'}
-            className="text-sm   inline-flex whitespace-nowrap font-semibold font-sans hover:bg-neutral-200/80 hover:border-neutral-200 hover:text-neutral-600
-             dark:text-neutral-300 dark:hover:text-neutral-200 text-neutral-700 dark:hover:border-neutral-900 dark:hover:bg-neutral-900 cursor-pointer duration-300 transition-all ease-in-out px-4 py-1 justify-center  items-center rounded-lg"
-          >
-            Showcase
-          </Link>
-          <Link
-            href={'/collections'}
+            href={'/components'}
             className="text-sm inline-flex font-semibold whitespace-nowrap font-sans font-inter dark:text-neutral-300 dark:hover:text-neutral-200 text-neutral-700 dark:hover:border-neutral-900 dark:hover:bg-neutral-900
              hover:bg-neutral-200/80 hover:border-neutral-200 hover:text-neutral-600
             cursor-pointer duration-300 transition-all ease-in-out px-4 py-1 justify-center  items-center rounded-lg"
           >
-            Collections
+            Components
           </Link>
         </div>
       </div>

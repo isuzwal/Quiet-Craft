@@ -5,6 +5,7 @@ import '@/style/globals.css';
 import { ThemeProvider } from 'next-themes';
 import { cn } from '@/lib/utils';
 import { fontVariables } from '@/lib/fontVaiables';
+import NavBara from '@/components/ui/navbara.view';
 
 export const metadata: Metadata = {
   title: 'Quiet Craft - A Modern UI Practice Project',
@@ -40,6 +41,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={cn('antialiased  bg-background', fontVariables)}>
         <ThemeProvider defaultTheme="light" enableSystem attribute="class">
+          <NavBara />
           {children}
         </ThemeProvider>
       </body>
