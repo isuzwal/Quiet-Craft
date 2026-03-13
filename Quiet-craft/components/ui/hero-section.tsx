@@ -5,7 +5,7 @@ import Link from 'next/link';
 export const HeroSection = () => {
   return (
     <div className="w-full  py-10 ">
-      <div className="flex   py-10 justify-center items-center">
+      <div className="flex flex-col gap-4   py-10 justify-center items-center">
         <Link
           href="/craft"
           className="inline-flex cursor-pointer gap-2 group px-4 py-1.5 relative justify-between items-center duration-300 ease-in-out transition-all text-foreground/70 hover:text-foreground/60 hover:bg-neutral-100 dark:text-foreground/70
@@ -16,7 +16,7 @@ export const HeroSection = () => {
           <span className="text-sm z-10">🎉</span>
           <span className="text-foreground/70 text-sm z-10">{' | '}</span>
           <p className="text-sm font-medium z-10 flex gap-1 items-end">
-            Introducing Quiet craft
+            Personal UI Experiments
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="18"
@@ -33,6 +33,17 @@ export const HeroSection = () => {
             </svg>
           </p>
         </Link>
+        <div className="w-full flex flex-col mt-4 text-center gap-1 justify-center items-center ">
+          <div className="max-w-2xl w-full mx-auto ">
+            <h1 className="font-medium text-[20px] dark:text-secondary-foreground/75  text-primary text-shadow-accent-foreground tracking-tight w-full mx-auto max-w-xl">
+              A personal collection of UI experiments and interface ideas
+            </h1>
+            <p className="text-[12px] mt-1.5 sm:mt-0 tracking-tight font-medium text-center text-neutral-600 dark:text-neutral-400 ">
+              Quiet Craft is my playground where I explore modern UI components, layouts and small
+              design experiments while learning and building.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );

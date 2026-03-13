@@ -8,9 +8,9 @@ import { fontVariables } from '@/lib/fontVaiables';
 import NavBara from '@/components/ui/navbara.view';
 
 export const metadata: Metadata = {
-  title: 'Quiet Craft - A Modern UI Practice Project',
+  title: 'Quiet Craft - Collection  of Componments',
   description:
-    'A modern UI web app  built with Next.js, featuring customizable themes, beautiful typography, and a growing UI component library.',
+    'A modern UI collection web app  built with Next.js, featuring customizable themes, beautiful typography, and a growing UI component library.',
   authors: [{ name: 'Uzwal', url: 'https://github.com/isuzwal' }],
   keywords: [
     'Next.js',
