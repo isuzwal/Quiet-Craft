@@ -1,16 +1,9 @@
 'use client';
-import { Menu, Moon, Sun } from 'lucide-react';
+import { Menu } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import {
-  Drawer,
-  DrawerClose,
-  DrawerContent,
-  DrawerHeader,
-  DrawerTitle,
-  DrawerTrigger,
-} from './drawer';
+import { Drawer, DrawerContent, DrawerHeader, DrawerTrigger } from './drawer';
 function NavBara() {
   const { theme, setTheme } = useTheme();
   const [scrolled, setScrolled] = useState<boolean>(false);
@@ -46,14 +39,14 @@ function NavBara() {
           Quiet Craft
         </Link>
         <div className=" hidden   lg:flex gap-2 items-center">
-          <Link
-            href={'/components'}
+          {/* <Link
+            href={'/docs/components'}
             className="text-sm inline-flex font-semibold whitespace-nowrap font-sans font-inter dark:text-neutral-300 dark:hover:text-neutral-200 text-neutral-700 dark:hover:border-neutral-900 dark:hover:bg-neutral-900
              hover:bg-neutral-200/80 hover:border-neutral-200 hover:text-neutral-600
             cursor-pointer duration-300 transition-all ease-in-out px-4 py-1 justify-center  items-center rounded-lg"
           >
             Components
-          </Link>
+          </Link> */}
         </div>
       </div>
       <div className="flex items-center  gap-1.5 justify-between">
@@ -97,32 +90,6 @@ function NavBara() {
             </svg>
           )}
         </button>
-        <Drawer>
-          <DrawerTrigger>
-            <button className=" lg:hidden px-2 py-2 hover:dark:bg-neutral-900 hover:dark:border-neutral-900  hover:bg-neutral-100 hover:border-neutral-100 ease-in-out duration-300 transition-all rounded-lg w-8  flex items-center justify-center">
-              <Menu className="size-4" />
-            </button>
-          </DrawerTrigger>
-          <DrawerContent className=" block lg:hidden dark:border-neutral-900  border border-neutral-400">
-            <DrawerHeader>
-              <div className="h-[600px]  flex flex-col overflow-y-scroll no-scrollbar">
-                <div className="w-full flex  flex-col gap-2 justify-start items-start ">
-                  <h1 className="font-sans font-semibold text-[18px] text-neutral-800 dark:text-neutral-100">
-                    Components
-                  </h1>
-                  <div className="w-full flex flex-col justify-start items-start">
-                    <Link
-                      href=""
-                      className="text-[15px] font-medium dark:hover:text-neutral-500   duration-300 transition-all ease-in-out cursor-pointer dark:text-neutral-400 text-neutral-700"
-                    >
-                      Buttons
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </DrawerHeader>
-          </DrawerContent>
-        </Drawer>
       </div>
     </nav>
   );

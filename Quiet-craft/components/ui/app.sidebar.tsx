@@ -8,7 +8,7 @@ export function AppSidebar() {
           Getting Started
         </h1>
         <Link
-          href="/components/introduction"
+          href="/docs"
           className="text-[12px] inline-flex font-semibold whitespace-nowrap font-sans font-inter dark:text-neutral-300 dark:hover:text-neutral-200 text-neutral-900 dark:hover:border-neutral-900 dark:hover:bg-neutral-900
              hover:bg-neutral-200/80 hover:border-neutral-200 hover:text-neutral-600
             cursor-pointer duration-300 transition-all ease-in-out px-3 py-1 justify-center  items-center rounded-lg"
