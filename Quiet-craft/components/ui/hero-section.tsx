@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import { Button } from './button';
 
 export const HeroSection = () => {
   return (

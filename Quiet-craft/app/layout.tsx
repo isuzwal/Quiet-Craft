@@ -5,11 +5,12 @@ import '@/style/globals.css';
 import { ThemeProvider } from 'next-themes';
 import { cn } from '@/lib/utils';
 import { fontVariables } from '@/lib/fontVaiables';
-import { Screen } from '@/components/ui/section-view';
+
 import NavBara from '@/components/ui/navbara.view';
+import { TooltipProvider } from '@/components/ui/tooltip';
 
 export const metadata: Metadata = {
-  title: 'Quiet Craft - Collection  of Componments',
+  title: 'Quiet Craft – Modern UI Component Library',
   description:
     'A modern UI collection web app  built with Next.js, featuring customizable themes, beautiful typography, and a growing UI component library.',
   authors: [{ name: 'Uzwal', url: 'https://github.com/isuzwal' }],
@@ -39,11 +40,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={cn('antialiased  bg-background', fontVariables)}>
-        <ThemeProvider defaultTheme="light" enableSystem attribute="class">
-          <NavBara />
-          {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <TooltipProvider>{children}</TooltipProvider>
         </ThemeProvider>
       </body>
     </html>
