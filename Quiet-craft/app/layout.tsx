@@ -5,6 +5,7 @@ import '@/style/globals.css';
 import { ThemeProvider } from 'next-themes';
 import { cn } from '@/lib/utils';
 import { fontVariables } from '@/lib/fontVaiables';
+import { Screen } from '@/components/ui/section-view';
 import NavBara from '@/components/ui/navbara.view';
 
 export const metadata: Metadata = {

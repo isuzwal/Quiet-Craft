@@ -31,15 +31,15 @@ function NavBara() {
     <nav
       className={` px-1  sm:px-6 sm:py-2 py-1.5  sticky top-0 w-full boder z-50  backdrop-blur-2xl  ${scrolled ? '   ' : null}   flex justify-between `}
     >
-      <div className="flex  items-center gap-6   justify-between  max-w-[16rem]  w-full">
-        <Link
-          href={'/'}
-          className="   text-xl   font-sans font-semibold tracking-tighter font-inter  text-neutral-800 dark:text-neutral-200 cursor-pointer"
-        >
-          Quiet Craft
-        </Link>
-      </div>
-      <div className="flex items-center  gap-1.5 justify-between">
+      <div className="flex items-center  w-full    gap-1.5 justify-between">
+        <div className="flex  items-center gap-6">
+          <Link
+            href={'/'}
+            className="   text-xl   font-sans font-semibold tracking-tighter font-inter  text-neutral-800 dark:text-neutral-200 cursor-pointer"
+          >
+            Quiet Craft
+          </Link>
+        </div>
         <button
           onClick={handleTheme}
           className=" px-2 py-2 hover:dark:bg-neutral-900 hover:dark:border-neutral-900  hover:bg-neutral-100 hover:border-neutral-100 ease-in-out duration-300 transition-all rounded-lg w-8  flex items-center justify-center"
