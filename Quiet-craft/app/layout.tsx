@@ -6,8 +6,8 @@ import { ThemeProvider } from 'next-themes';
 import { cn } from '@/lib/utils';
 import { fontVariables } from '@/lib/fontVaiables';
 
-import NavBara from '@/components/ui/navbara.view';
 import { TooltipProvider } from '@/components/ui/tooltip';
+import NavBara from '@/components/ui/navbara.view';
 
 export const metadata: Metadata = {
   title: 'Quiet Craft – Modern UI Component Library',
@@ -43,7 +43,10 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body className={cn('antialiased  bg-background', fontVariables)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <TooltipProvider>{children}</TooltipProvider>
+          <TooltipProvider>
+            <NavBara />
+            {children}
+          </TooltipProvider>
         </ThemeProvider>
       </body>
     </html>

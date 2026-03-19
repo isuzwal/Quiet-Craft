@@ -29,7 +29,7 @@ function NavBara() {
 
   return (
     <nav
-      className={` px-1  sm:px-6 sm:py-2 py-1.5  sticky top-0 w-full boder z-50  backdrop-blur-2xl  ${scrolled ? '   ' : null}   flex justify-between `}
+      className={` max-w-7xl mx-auto  sm:py-2 py-1.5  sticky top-0 w-full boder z-50  backdrop-blur-2xl  ${scrolled ? '   ' : null}   flex justify-between `}
     >
       <div className="flex items-center  w-full    gap-1.5 justify-between">
         <div className="flex  items-center gap-6">
