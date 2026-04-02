@@ -23,7 +23,9 @@ export const AnimationCard = () => {
             </svg>
             Clek <ChevronDown className="size-3" />
           </span>
-          <div className="bg-neutral-100/60 dark:bg-neutral-800/70  dark:border-neutral-700 border h-60 border-dashed max-w-sm mx-auto w-full  border-neutral-200  rounded-md"></div>
+          <div className="bg-neutral-100/60 dark:bg-neutral-800/70  dark:border-neutral-700 border h-60 border-dashed max-w-sm mx-auto w-full  border-neutral-200  rounded-md">
+            <div className=""></div>
+          </div>
         </div>
       </div>
     </div>
