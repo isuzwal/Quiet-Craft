@@ -102,10 +102,10 @@ export const HeroSection = () => {
                   </g>
                 </svg>
               </div>
-              <div className="  cursor-pointer relative h-6 w-6  overflow-hidden  border-neutral-800 rounded-full flex justify-center items-center">
+              <div className="  cursor-pointer relative  h-5.5 w-5.5  overflow-hidden  border-neutral-800 rounded-full flex justify-center items-center">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-full h-full"
+                  className="w-full h-full mb-0.5"
                   viewBox="0 0 24 24"
                 >
                   <path
