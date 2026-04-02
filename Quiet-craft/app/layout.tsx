@@ -1,13 +1,12 @@
 import type { Metadata } from 'next';
 
-import '@/style/globals.css';
+import './globals.css';
 
 import { ThemeProvider } from 'next-themes';
 import { cn } from '@/lib/utils';
 import { fontVariables } from '@/lib/fontVaiables';
 
 import { TooltipProvider } from '@/components/ui/tooltip';
-import NavBara from '@/components/ui/navbara.view';
 
 export const metadata: Metadata = {
   title: 'Quiet Craft – Modern UI Component Library',
@@ -40,13 +39,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en">
       <body className={cn('antialiased  bg-background', fontVariables)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <TooltipProvider>
-            <NavBara />
-            {children}
-          </TooltipProvider>
+          <TooltipProvider>{children}</TooltipProvider>
         </ThemeProvider>
       </body>
     </html>

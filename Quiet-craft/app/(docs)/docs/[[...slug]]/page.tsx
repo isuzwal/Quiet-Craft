@@ -1,4 +1,3 @@
-import { ArrowLeft, Globe, Code2, Clock } from 'lucide-react';
 import { notFound } from 'next/navigation';
 
 import fs from 'fs';
@@ -41,41 +40,19 @@ export default async function Page({ params }: { params: Promise<{ slug?: string
   const { frontmatter, content } = project;
 
   return (
-    <div className=" ">
-      <div className="flex flex-col   w-full max-w-3xl mx-auto p-2 gap-6">
+    <div className="w-full">
+      <div className="flex flex-col   max-w-5xl mx-auto  w-full  p-2 gap-2">
         <div className="flex items-start justify-between gap-2">
           <div className=" items-center">
-            <h1 className="text-2xl md:text-3xl font-mono font-semibold tracking-tight dark:text-neutral-200 text-neutral-700">
+            <h1 className="text-2xl md:text-3xl font-sans font-semibold tracking-tight dark:text-neutral-200 text-neutral-900">
               {frontmatter.name}
             </h1>
             <div>
-              <p className="  font-sans dark:text-neutral-400 text-neutral-700 text-[14px]  tracking-wide leading-normal">
+              <p className="font-sans dark:text-neutral-400 text-neutral-700 text-[14px]  tracking-wide leading-normal">
                 {frontmatter.description}
               </p>
             </div>
           </div>
-          {/* <div className="flex gap-2 mt-1">
-            <Link
-              href={frontmatter.liveURL}
-              target="_blank"
-              className="flex  items-center gap-1 px-3 py-1.5 rounded-[10px] text-[10px] font-mono font-medium
-              dark:bg-neutral-900 border dark:border-neutral-800/70 border-slate-200
-              dark:text-neutral-300 text-neutral-600 hover:bg-slate-100 dark:hover:bg-neutral-800 transition-all"
-            >
-              <Globe className="size-3.5" />
-              Live
-            </Link>
-            <Link
-              href={frontmatter.codeURL}
-              target="_blank"
-              className="flex  items-center gap-1 px-3 py-1.5 rounded-[10px] text-[10px] font-mono font-medium
-              dark:bg-neutral-900 border dark:border-neutral-800/70 border-slate-200
-              dark:text-neutral-300 text-neutral-600 hover:bg-slate-100 dark:hover:bg-neutral-800 transition-all"
-            >
-              <Code2 className="size-3.5" />
-              Code
-            </Link>
-          </div> */}
         </div>
 
         <div className="flex flex-col justify-center gap-4">
@@ -134,6 +111,7 @@ export default async function Page({ params }: { params: Promise<{ slug?: string
                   {children}
                 </td>
               ),
+
               AnimationCard,
             }}
           />

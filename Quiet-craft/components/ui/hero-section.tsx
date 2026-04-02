@@ -35,7 +35,7 @@ export const HeroSection = () => {
         </button>
         <div className="w-full flex flex-col mt-4 text-center gap-1 justify-center items-center ">
           <div className="max-w-2xl flex flex-col gap-1 w-full mx-auto ">
-            <h1 className="font-medium text-2xl dark:text-secondary-foreground/75  text-primary text-shadow-accent-foreground tracking-tighter leading-normal  w-full mx-auto max-w-2xl">
+            <h1 className="font-medium text-2xl dark:text-secondary-foreground/90  text-primary text-shadow-accent-foreground tracking-tighter leading-normal  w-full mx-auto max-w-2xl">
               A personal collection of UI experiments and interface ideas
             </h1>
             <p className="text-[13px] mt-1.5 sm:mt-0 tracking-tight font-medium text-center text-neutral-600 dark:text-neutral-400 ">
@@ -118,7 +118,7 @@ export const HeroSection = () => {
           </div>
 
           <Link
-            href="/docs/carft"
+            href="/docs"
             className="text-[14px] px-4 py-0.5 bg-primary  text-background font-medium cursor-pointer rounded-md border "
           >
             Browse Craft
