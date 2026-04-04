@@ -1,4 +1,4 @@
-export interface SideBarLinks{
+export interface DocsLinks{
     name:string;
     link:string;
 }

@@ -1,4 +1,4 @@
-export const ButtonView = () => {
+export const CustomButton = () => {
   return (
     <div className="flex items-center justify-center">
       <button

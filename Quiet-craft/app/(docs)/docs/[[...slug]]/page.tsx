@@ -5,8 +5,11 @@ import path from 'path';
 import matter from 'gray-matter';
 import { MDXRemote } from 'next-mdx-remote/rsc'; // RSC version
 import remarkGfm from 'remark-gfm';
-import { AnimationCard } from '@/components/animation-card';
-import { CardContainer } from '@/components/card-container';
+
+import { CustomButton } from '@/components/ui/custom-button';
+import { AnimationCard } from '@/components/ui/animation-card';
+
+import { CardContainer } from '@/components/ui/card-container';
 
 export async function generateStaticParams() {
   const contentDir = path.join(process.cwd(), '/content/docs');
@@ -114,6 +117,7 @@ export default async function Page({ params }: { params: Promise<{ slug?: string
               ),
               CardContainer,
               AnimationCard,
+              CustomButton,
             }}
           />
         </div>
