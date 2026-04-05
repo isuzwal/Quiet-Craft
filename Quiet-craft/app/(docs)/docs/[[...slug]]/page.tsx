@@ -10,7 +10,7 @@ import { CustomButton } from '@/components/ui/custom-button';
 import { AnimationCard } from '@/components/ui/animation-card';
 
 import { CardContainer } from '@/components/ui/card-container';
-
+import { ButtonContainer } from '@/components/ui/button-conatiner';
 export async function generateStaticParams() {
   const contentDir = path.join(process.cwd(), '/content/docs');
   const files = fs.readdirSync(contentDir);
@@ -115,7 +115,8 @@ export default async function Page({ params }: { params: Promise<{ slug?: string
                   {children}
                 </td>
               ),
-              CardContainer,
+              CardContainer, // card continer
+              ButtonContainer, // button conatiner
               AnimationCard,
               CustomButton,
             }}

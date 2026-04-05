@@ -7,7 +7,7 @@ export const DocsLink:DocsLinks[]=[
         link:"/docs/animation-card"
     },
     {
-        name:"Button ",
-        link:"/docs/button"
+        name:"Buttons",
+        link:"/docs/buttons"
     }
 ]

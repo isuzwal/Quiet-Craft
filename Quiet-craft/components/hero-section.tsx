@@ -72,17 +72,41 @@ export const HeroSection = () => {
                   transition={{ duration: 0.4, ease: 'easeInOut' }}
                   className="absolute inset-0 flex items-center justify-center"
                 >
-                  See Docs
+                  Read Docs
                 </motion.span>
               </div>
             </Link>
           </motion.button>
-          <Link
-            href="/docs/animation-card"
-            className="text-[14px] px-4 py-0.5  font-medium cursor-pointer dark:bg-neutral-950 rounded-md border dark:border-neutral-900/80  "
+          <motion.button
+            whileHover="hover"
+            initial="rest"
+            className="text-[14px] px-4 py-0.5  font-medium cursor-pointer dark:bg-neutral-950 rounded-md border dark:border-neutral-900/80 "
           >
-            Explore Components
-          </Link>
+            <Link href="/docs/animation-card">
+              <div className=" relative overflow-hidden h-5">
+                <motion.span
+                  variants={{
+                    rest: { y: '0%' },
+                    hover: { y: '-100%' },
+                  }}
+                  transition={{ duration: 0.4, ease: 'easeInOut' }}
+                  className=" block  "
+                >
+                  Explore Components
+                </motion.span>
+                <motion.span
+                  variants={{
+                    rest: { y: '100%' },
+                    hover: { y: '0%' },
+                  }}
+                  transition={{ duration: 0.4, ease: 'easeInOut' }}
+                  className="absolute inset-0 flex items-center justify-center"
+                >
+                  Try a Components
+                </motion.span>
+              </div>
+            </Link>
+          </motion.button>
         </div>
       </div>
     </div>
