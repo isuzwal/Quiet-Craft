@@ -25,14 +25,54 @@ export const CustomButton = () => {
           <span className="">Download for free</span>
         </button>
       </div>
-      {/* <div className="flex items-center justify-center">
-        <button
-          className="flex items-center gap-1  cursor-pointer justify-center px-2 py-1 rounded-lg text-white text-sm bg-gradient-to-b from-[#E36323] to-[#DF5A18] border border-[#8c3d16] 
-        shadow-[inset_0_1px_0_rgba(255,255,255,0.33),0_0px_2px_rgba(252,96,16,0.95)]"
+      <div className="flex items-center justify-center">
+        <motion.button
+          initial="rest"
+          whileHover="hover"
+          animate="rest"
+          className=" relative  cursor-pointer text-xs font-sans font-medium  gap-1.5 w-fit whitespace-nowrap  items-center overflow-hidden inline-flex  border border-dashed dark:border-neutral-800 border-neutral-400 px-2 py-1 rounded-md  bg-slate-100 text-neutral-800/90  dark:text-neutral-300/90 dark:bg-neutral-900"
         >
-          <span className="">Download for free</span>
-        </button>
-      </div> */}
+          <motion.p>Hover me </motion.p>
+          <motion.span
+            variants={{
+              rest: { opacity: 0, x: -5, width: 0 },
+              hover: { opacity: 1, x: 4, width: 'auto' },
+            }}
+            transition={{ duration: 0.25 }}
+            className=""
+          >
+            <svg width="14" height="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <g fill="none">
+                <path
+                  fill="#ffef5e"
+                  d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1S1 5.925 1 12s4.925 11 11 11"
+                />
+                <path
+                  fill="#fff9bf"
+                  d="M12 4.826a11.8 11.8 0 0 1 10.994 7.517c0-.114.006-.228.006-.343a11 11 0 1 0-21.994.343A11.8 11.8 0 0 1 12 4.826"
+                />
+                <path
+                  stroke="#191919"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1S1 5.925 1 12s4.925 11 11 11"
+                />
+                <path
+                  stroke="#191919"
+                  d="M6.739 10.326a.24.24 0 0 1 0-.478m.001.478a.24.24 0 0 0 0-.478m10.52.478a.24.24 0 0 1 0-.478m0 .478a.24.24 0 0 0 0-.478"
+                />
+                <path
+                  fill="#ff808c"
+                  stroke="#191919"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.705 15.348a.957.957 0 0 1 .927 1.194a4.782 4.782 0 0 1-9.264 0a.956.956 0 0 1 .927-1.194z"
+                />
+              </g>
+            </svg>
+          </motion.span>
+        </motion.button>
+      </div>
       <div className="flex items-center justify-center">
         <motion.button
           onClick={handleClick}
