@@ -53,8 +53,8 @@ export const CustomButton = () => {
                 />
                 <path
                   stroke="#191919"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M12 23c6.075 0 11-4.925 11-11S18.075 1 12 1S1 5.925 1 12s4.925 11 11 11"
                 />
                 <path
@@ -64,8 +64,8 @@ export const CustomButton = () => {
                 <path
                   fill="#ff808c"
                   stroke="#191919"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M15.705 15.348a.957.957 0 0 1 .927 1.194a4.782 4.782 0 0 1-9.264 0a.956.956 0 0 1 .927-1.194z"
                 />
               </g>

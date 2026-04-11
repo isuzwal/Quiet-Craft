@@ -9,5 +9,9 @@ export const DocsLink:DocsLinks[]=[
     {
         name:"Buttons",
         link:"/docs/buttons"
+    },
+    {
+        name:"Voice Card",
+        link:"/docs/voice-card"
     }
 ]

@@ -102,7 +102,7 @@ export const HeroSection = () => {
                   transition={{ duration: 0.4, ease: 'easeInOut' }}
                   className="absolute inset-0 flex items-center justify-center"
                 >
-                  Try a Components
+                  See a Components
                 </motion.span>
               </div>
             </Link>
