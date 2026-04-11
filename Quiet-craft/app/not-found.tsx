@@ -1,6 +1,12 @@
-'use client';
+import type { Metadata } from 'next';
 import Link from 'next/link';
 
+export const metadata: Metadata = {
+  title: '404 – Page Not Found',
+  description:
+    'Sorry, the page you are looking for does not exist. You may have followed a broken link or mistyped the address.',
+  robots: 'noindex',
+};
 export default function NotFoundPage() {
   return (
     <div className="flex justify-center items-center  w-full h-screen p-2">
